@@ -32,24 +32,29 @@ if (isset($_POST['logout'])) {
         </p>
     </div>
     <!-- PROMOTION END-->
+
+    <!-- SESSION WELCOME -->
+
     <h3>Selamat Datang <?= $_SESSION['username'] ?></h3>
 
-    <form action="dashboard.php" method="POST">
-        <button type="submit" name="logout">Logout</button>
-    </form>
+    <!-- SESSION WELCOME END -->
 
     <!-- NAVBAR START -->
     <header class="bg-white">
         <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
             <div class="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between">
-                <div>
+                <div class="flex items-center gap-4">
+                    <form action="dashboard.php" method="POST">
+                        <button type="submit" name="logout"
+                            class="bg-indigo-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                            Logout
+                        </button>
+                    </form>
                     <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl">Alexandria Interior</h1>
-
-                    <p class="mt-1.5 text-sm text-gray-500">
-                        Belanja konstruksi rumah anda disini, dengan bahan UPVC S+.
-                    </p>
                 </div>
-
+                <p class="mt-1.5 text-sm text-gray-500">
+                    Belanja konstruksi rumah anda disini, dengan bahan UPVC S+.
+                </p>
                 <div class="flex items-center gap-4">
                     <a href="cara-belanja.html"
                         class="inline-flex items-center justify-center gap-1.5 rounded border border-gray-200 bg-white px-5 py-3 text-gray-900 transition hover:text-gray-700 focus:outline-none focus:ring"
@@ -138,7 +143,8 @@ if (isset($_POST['logout'])) {
     <div class="container grid grid-cols-3 gap-8 max-w-xl mx-auto py-8">
         <a href="https://wa.me/628170733339?text=Permisi min saya mau beli Jendela UPVC Sliding uk.2000x1000mm"
             class="group block">
-            <img src="produk1.png" alt="" class="aspect-square w-full rounded object-cover" />
+            <img src="https://images.tokopedia.net/img/cache/900/product-1/2019/2/7/80845/80845_69448d9b-8c95-4a79-a364-cb83fee78f81_641_641.jpg"
+                alt="" class="aspect-square w-full rounded object-cover" />
 
             <div class="mt-3">
                 <h3 class="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4">
@@ -150,7 +156,8 @@ if (isset($_POST['logout'])) {
         </a>
         <a href="https://wa.me/628170733339?text=Permisi min saya mau beli Pintu ABS Klasik uk.900x2100mm"
             class="group block">
-            <img src="produk2.png" alt="" class="aspect-square w-full rounded object-cover" />
+            <img src="https://images.tokopedia.net/img/cache/900/product-1/2017/11/13/0/0_283e048a-ff6c-4a04-8908-759078ca80db_700_700.jpg"
+                alt="" class="aspect-square w-full rounded object-cover" />
 
             <div class="mt-3">
                 <h3 class="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4">
@@ -162,7 +169,8 @@ if (isset($_POST['logout'])) {
         </a>
         <a href="https://wa.me/628170733339?text=Permisi min saya mau beli Jendela UPVC merk S plus, Garansi 10 tahun"
             class="group block">
-            <img src="produk3.png" alt="" class="aspect-square w-full rounded object-cover" />
+            <img src="https://images.tokopedia.net/img/cache/900/product-1/2017/11/13/0/0_b91416a8-b5d9-4cb7-827b-e05fa6b03ab2_690_460.jpg"
+                alt="" class="aspect-square w-full rounded object-cover" />
 
             <div class="mt-3">
                 <h3 class="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4">
@@ -174,7 +182,8 @@ if (isset($_POST['logout'])) {
         </a>
         <a href="https://wa.me/628170733339?text=Permisi min saya mau beli pintu kamar mandi UPVC uk 700x1950mm"
             class="group block">
-            <img src="produk4.png" alt="" class="aspect-square w-full rounded object-cover" />
+            <img src="https://images.tokopedia.net/img/cache/900/product-1/2019/2/6/80845/80845_ded3e7ae-9733-4c30-a8cb-a54a781152c9_720_720.jpg"
+                alt="" class="aspect-square w-full rounded object-cover" />
 
             <div class="mt-3">
                 <h3 class="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4">
@@ -257,7 +266,8 @@ if (isset($_POST['logout'])) {
     <footer class="bg-gray-100">
         <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
             <div class="flex items-center justify-center text-indigo-600">
-                <img src="alexandria interior.jpg" alt="Alexandria Interior" class="h-20 w-20 max-w-xs">
+                <img src="https://scontent.fcgk27-2.fna.fbcdn.net/v/t39.30808-6/300856793_453035200171477_7507917341281782058_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=VRk2aFlyqjYQ7kNvgE41ePo&_nc_oc=Adjvm9wKxyjX6pGP2Fg82bpDyMvweZIxgChoPxHp0taYQ0VRyjANO4DFmWugLYWMr8o6WMtTS5ZIBhsiBq_TVTIp&_nc_zt=23&_nc_ht=scontent.fcgk27-2.fna&_nc_gid=AHF7E717n8R2gwpEKW6P9-G&oh=00_AYDifamk4KeXCfvIv2bSO3E95ai7op9pTmBeZNR53fZ3VA&oe=67A027C7"
+                    alt="Alexandria Interior" class="h-20 w-20 max-w-xs">
                 <p class="ml-4 text-xl font-bold">ALEXANDRIA INTERIOR</p>
             </div>
 
@@ -336,6 +346,17 @@ if (isset($_POST['logout'])) {
                     </a>
                 </li>
             </ul>
+        </div>
+        <div class="border-t border-gray-100 pt-2">
+            <p class="text-center text-xs/relaxed text-gray-500">
+                © Alexandria Interior 2025. All rights reserved.
+                <br />
+                Created with
+                <a href="#" class="text-gray-700 underline transition hover:text-gray-700/75">Laravel</a>
+                and
+                <a href="#" class="text-gray-700 underline transition hover:text-gray-700/75">Laravel Livewire</a>
+            </p>
+
         </div>
     </footer>
     <!-- END FOOTER -->
